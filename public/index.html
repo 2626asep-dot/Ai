@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <title>NEXORA AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="logo">N</div><div><b>NEXORA</b><small>AI ASSISTANT</small></div></div>
+      <button class="new-chat" id="newChat">＋　Chat Baru</button>
+      <div class="side-label">RIWAYAT</div>
+      <div id="history" class="history"></div>
+      <div class="side-bottom"><span class="status-dot"></span><span id="status">Memeriksa koneksi AI…</span></div>
+    </aside>
+    <main class="main">
+      <header><button class="mobile-menu" id="menuBtn">☰</button><span>NEXORA AI</span><span class="online"><i></i> AI Assistant</span></header>
+      <section class="chat" id="chat">
+        <div class="welcome" id="welcome">
+          <div class="hero-logo">N</div>
+          <p class="eyebrow">YOUR INTELLIGENT ASSISTANT</p>
+          <h1>Ada yang bisa<br><em>NEXORA bantu?</em></h1>
+          <p class="sub">Tanyakan apa saja. Kita mulai dari sini.</p>
+          <div class="suggestions">
+            <button data-prompt="Jelaskan kecerdasan buatan dengan bahasa sederhana.">✦　Jelaskan tentang AI</button>
+            <button data-prompt="Bantu aku membuat rencana belajar coding 30 hari.">⌘　Belajar coding</button>
+            <button data-prompt="Berikan 5 ide proyek aplikasi yang menarik.">◇　Cari ide proyek</button>
+          </div>
+        </div>
+        <div id="messages" class="messages"></div>
+      </section>
+      <form id="composer" class="composer">
+        <textarea id="prompt" rows="1" placeholder="Kirim pesan ke NEXORA AI…" autocomplete="off"></textarea>
+        <button id="send" type="submit" aria-label="Kirim">➤</button>
+        <div class="hint">NEXORA AI dapat membuat kesalahan. Periksa informasi penting.</div>
+      </form>
+    </main>
+  </div>
+  <script src="config.js"></script>\n  <script src="app.js"></script>
+</body>
+</html>
